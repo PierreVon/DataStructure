@@ -11,6 +11,7 @@
 
 class node {
     int val;
+    int weight;
     node *next;
     
 public:
@@ -28,11 +29,17 @@ public:
     node* getptr(){
         return next;
     };
+    int getweight(){
+        return weight;
+    };
     void setval(int val){
         this->val = val;
     }
     void setptr(node* ptr){
         this->next = ptr;
+    }
+    void setweight(int weight){
+        this->weight = weight;
     }
 };
 
